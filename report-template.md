@@ -5,10 +5,17 @@
 In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
 
 * Explain the purpose of the analysis.
+This analysis is specifically being done to get data that will back future decisions concerning creditworthiness and otherwise.
 * Explain what financial information the data was on, and what you needed to predict.
+We needed to predict risk associated with credit.  Who to lend to, who is a sufficient candidate and who poses the risks with lended credit.  
 * Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
+Tools for creating this data consisted of python and libraries such as sklearn.  Within sklearn we used metrics of balanced accuracy, confusion matrix, classification report imbalanced.  In order to test and train data into datasets train_test_split module from sklearn was implemented.  Other libraries within helped the process as well.
 * Describe the stages of the machine learning process you went through as part of this analysis.
+Steps in the process consisted of obtain original data, spliting it in to variables, checking initial data such as value count in order to compare with later model data.  The data is again split into training and testing datasets.  Afterwards that data is then place in Model methods such as logistic regression, that follows up with predictions, and then reports.  
+
+To get a better understanding of the data we resample the data in accordance to weak points such as data that arent sampled enough or too much.  So we oversample or undersample for newer results.  With the datasets of the new sample we repeat the steps and then compare the results from both.
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+Methods mentioned above.
 
 ## Results
 
@@ -46,4 +53,4 @@ The first difference if that the accuracy score is roughly 5% higher. Based on t
 
 If you do not recommend any of the models, please justify your reasoning.
 
-Both models would work because they both do not have a stark negative accuracy.  But the second model is better.
+Both models would work because they both do not have a stark negative accuracy.  But the second model is better. 
